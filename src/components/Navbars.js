@@ -1,12 +1,16 @@
 import { Button ,Image, Nav, Navbar, NavDropdown, Form, FormControl } from 'react-bootstrap';
 import vino from '../vino.jpg';
+import CardWidget from './CardWidget';
 function Navbars() {
   return (
     <>  
    
     <Navbar bg="light" expand="lg">
     <Image classname="logo" src={vino} style={{width:35}} />
-      <Navbar.Brand href="#home">INICIO</Navbar.Brand>
+    <Navbar.Brand href="#home"></Navbar.Brand>
+    <CardWidget/>
+    <Navbar.Brand href="#home"></Navbar.Brand>
+    <Navbar.Brand href="#home">INICIO</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
